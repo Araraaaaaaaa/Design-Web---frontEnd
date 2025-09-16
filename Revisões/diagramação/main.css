@@ -1,0 +1,21 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+}
+
+figure{ /*atributo que permite um item flutuar para o lado direito ou esquerdo */
+    float: left; /*left or right*/
+}
+
+div.outrospercusos{
+    float: right; /*left or right*/
+    border: 2px solid black;
+    padding: 1rem;
+    margin: 1rem;
+}
+footer{
+    background-color: darkgreen;
+    padding: 1rem;
+    text-align: center;
+    clear: both; /* limpa os elementos que estão flutuando com o atributo float, não deixa que ele invada outros espaços */
+}
