@@ -1,0 +1,21 @@
+*{
+    margin: 0; /*espaçamento externo*/
+    padding: 0; /*espaçamento interno*/
+}
+body{
+    background-color: antiquewhite;
+    display: flex;
+    height: 100vh;/*vh: altura disponível do dispositivo*/
+    /*alinhamento ou distribuição central horizontal*/
+    justify-content: center;
+    /*alinhamento ou distribuição central vertical. O align apenas funciona se o margin for 0, o height/altura do body for 100vh ou 100%*/
+    align-items: center;
+}
+section{
+    border: 1px solid black;
+    padding: 2rem;/*rem: */
+    border-radius: 2rem;
+    width: 20rem;
+    height: 20rem;
+}
+/*usar com formularios e modal*/

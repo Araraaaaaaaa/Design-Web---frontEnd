@@ -1,0 +1,29 @@
+
+body{
+    background-color: rgb(195, 206, 226);
+}
+section{
+    display: flex;
+    border: 1px solid black;
+    margin: 2rem;/*rem: */
+    padding: 2rem;/*rem: */
+    border-radius: 0.5rem;
+    flex-wrap: wrap; /*permite que ele ocupe o bloco inteiro*/
+    gap: 1%;
+    
+}
+section > h2{
+    margin-bottom: 1rem;
+    flex-basis: 100%; /*define a largura do filho que deve estar dentro de um container com display flex*/
+    padding: 1%;
+    background-color:rgb(255, 255, 255)
+}
+section > div{
+    background-color:rgb(255, 255, 228);
+    padding: 1%;
+    flex-basis: 30.66666%;
+
+}
+div.card-50{
+    flex-basis: 47.5%;
+}

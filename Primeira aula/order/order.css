@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+}
+section{
+    border: 1px solid black;
+    padding: 2rem;/*rem: */
+    border-radius: 2rem;
+    width: 20rem;
+    height: 20rem;
+}
+/*Deixa na ordem desejada apenas que todos os irmãos tenham o mesmo atributo order. é um atributo dos filhos e não dos pais. order sempre começa no zero e cresce em inteiros*/
+section.not-0{
+    order: 1;
+}
+section.not-1{
+    order: 6;
+}
+section.not-2{
+    order: 7;
+}
+section.not-3{
+    order: 5;
+}
+section.not-4{
+    order: 3;
+}
+section.not-5{
+    order: 4;
+}
+section.not-6{
+    order: 2;
+}
+section.not-7{
+    order: 0;
+}
