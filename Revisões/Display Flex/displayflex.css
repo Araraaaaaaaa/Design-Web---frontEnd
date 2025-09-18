@@ -10,7 +10,7 @@ header, footer{ /*agrupamento de seletores*/
 main{
     display: flex; /*permite que os elementos de section fiquem um ao lado do outro*/
     justify-content: space-around; /*tem várias possibilidades, é o que alinha tudo do display flex*/
-    background-color: rgb(150, 228, 161);
+    background-color: rgb(217, 226, 203);
     gap: 1rem; /*significa distancia, espaçamento. nesse caso, ele sta entre os sections, por incrível que pareça. similar ao margin, porem mais indicado com configurações com flex e grid*/
     flex-wrap: wrap; /*possibilidade de quebrar os cards*/
 }
