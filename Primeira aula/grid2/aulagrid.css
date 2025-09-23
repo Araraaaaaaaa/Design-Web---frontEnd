@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: grid;
+    /*gap: 1rem;*/
+    grid-template-rows: 3fr 3fr 1fr;
+    grid-template-areas:
+    "a b c"
+    "a b d"
+    "e e e"
+}
+section{
+    border: 1px solid black;
+    background-color: antiquewhite;
+}
+section.um{
+    grid-area: a;
+}
+section.dois{
+    grid-area: b;
+}
+section.tres{
+    grid-area: c;
+}
+section.quatro{
+    grid-area: d;
+}
+section.cinco{
+    grid-area: e;
+}

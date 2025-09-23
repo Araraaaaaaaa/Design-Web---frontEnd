@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:  rgb(133, 140, 197);
+    padding: 1rem;
+}
+body{
+    background-color:rgb(255, 253, 244);
+}
+footer{
+    background-color: rgb(133, 140, 197);
+    padding: 1rem;
+}
+
+main{
+    padding: 2rem;
+    display: grid;
+    margin: 1 auto;
+    max-width: 1rem auto;
+    gap: 1rem; /*assim como no display flex, define o espaçamento entre áreas*/
+    grid-template-areas: /*a definição de area é feito com o grid-templates-areas*/
+    "a b c"
+    "a . d"; /*pode ter um espaço vazio, basta usar um ponto*/
+    grid-template-columns: 1fr 2fr 5fr; /*a quantidade de parâmetros é a quantidade de colunas.pega a área disponível e divide com a fração (fr). pode usar a unidade fração e outras. Ele define a largura da coluna*/
+    grid-template-rows: 10rem, 10rem; /*a quantidade de parâmetros é a quantidade de linhas. redefine a altura das linhas. porém, cuidado pois limita a altura*/
+}
+/*a variavel não pode conter espaço ou caracteres especiais, começar por número ou ter apenas números*/
+section{
+    border-radius: 1rem;
+    border: 1px solid gray;
+    padding: 1rem;
+    margin: 0.5rem;
+    overflow: auto; /*possibilita a barra de rolagem*/
+}
+section.noticias{
+    grid-area: a;
+    background-color: rgb(179, 223, 192);
+}
+section.comemoracao{
+    grid-area: b;
+    background-color: rgb(179, 220, 223);
+}
+section.organizadores{
+    grid-area: c;
+    background-color: rgb(223, 179, 192);
+}
+section.corrida{
+    grid-area: d;
+    background-color: rgb(223, 210, 179);
+}
