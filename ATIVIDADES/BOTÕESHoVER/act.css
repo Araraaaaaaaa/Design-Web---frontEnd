@@ -1,0 +1,16 @@
+ul > li{
+    display: flex;
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1px solid black;
+}
+ul > li > nav{
+    margin-left: 2rem;
+}
+ul > li > nav > img{
+    visibility: hidden;
+}
+ul > li:hover img{
+    visibility: visible;
+}

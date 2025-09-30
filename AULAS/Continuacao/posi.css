@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header,footer, section{
+    padding: 1rem;
+    background-color:cadetblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.7rem;
+    margin-bottom: 2rem;
+}
+header, footer{
+    background-color:antiquewhite;
+    text-align: center;
+}
+footer{
+    margin: 0;
+}
+main{
+    margin-top: 10rem;
+}
+header{
+    position: fixed; /*posiciona o elemento sobre a página. ativa o eixo Z. sobrepõe os elementos da página em relção ao comportamento de estilo/formatação, o elemento deixa de ser display block para ser inline-block, isto é, perde a largura. para aumentar, basta aumentar o width*/
+    width: 100vw; /*viewport width = largura do dispositivo*/
+    top: 0;
+    z-index: 1; /*organiza a ordem do eixo Z*/
+    /* CORDENADAS, escolher NO MÍNIMO uma e NO MÁXIMO duas. Um para o eixo X e outra para o eixo Y
+    Y: top, bottom | X: left, right, */
+}
+div.esmaecer{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.35); /*red, green, blue e alpha. alpha vai de 0 a 1*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#modal{
+    border-radius: 2rem;
+    border: 1px solid black;
+    background-color: rgb(186, 231, 248);
+    text-align: center;
+    z-index: 3;
+    padding: 2rem;
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 0px 0px 10px black;
+    position: absolute; /*fixa na página*/
+    /*Não se trabalha com altura mínima e máxima mas é importante configurar a largura e altura comum por conta do posicion*/
+}
+h2{
+    background-color: blanchedalmond;
+    position: relative; /*permite mexer o eixo do objeto*/
+    top: 10px;
+}
+figure{
+    width: auto;
+    height: 100px;
+}
