@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Incrição para aula de campo</title>
+</head>
+<body>
+
+    <h1>Incrição para a aula de campo</h1>
+
+    <form action="dadosenviados.html">
+        <!-- O atributo de action deve receber o arquivo de programação que processará os dados. O DAO -->
+        <label for="nome">*Nome:</label> <!--Visualmente não tem diferença, mas ela aumenta o cam de toque do input-->
+        <input type="text" id="nome" placeholder="Nome" required>  <!--required deixa o campo obrigatório-->
+        <!--Placeholder fica dentro do campo, ele pode substituir o label-->
+        <!-- estudar a tag de spam -->
+        <br>
+
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="Email" placeholder="Email">
+
+        <br>
+
+        <label for="curso">Curso:</label>
+        <select name="curso" id="curso"> <!--Apelido: Combo box. usado para um grupo muito grande 
+            de itens usuário tem que dar dois cliques-->
+            <!-- multiple da a possibilidade de selecionar multiplos com o ctrl-->
+            <option value="INF" selected>Informática para Internet</option> <!--Checked deixa o valor previamente selecionado-->
+            <option value="MSI">Manutenção e Suporte a Informática</option>
+            <option value="ADM">Administração</option>
+            <option value="CAM">Controle ambiental</option>
+            <option value="GEO">Geologia</option>
+            <option value="MEC">Mecânica</option>
+            <option value="EDI">Edificações</option>
+            <option value="ELE">Eletrônica</option>
+        </select>
+
+        <h2>Diretoria: </h2>
+        <!-- quando se usa o componente rádio ou checkbox, o valor do nae tem que ser o mesmo -->
+        <label><input type="radio" name="dir" checked value="1">DIATINF</label>
+        <label><input type="radio" name="dir" value="2">DIAREN</label>
+        <label><input type="radio" name="dir" value="3">DIACON</label> <!--Checked deixa o valor previamente selecionado-->
+        <label><input type="radio" name="dir" value="4">DIACIN</label>
+        <label><input type="radio" name="dir" value="5">DIAC</label> 
+        <br>
+        <label><input type="radio" name="turno" checked value="1">Matutino</label>
+        <label><input type="radio" name="turno" value="2">Vespertino</label> 
+        <label><input type="radio" name="turno" value="3">Noturno</label> 
+        <label><input type="radio" name="turno" value="4">Madrugada</label> 
+        <br>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" list="cidade-list">
+
+        <br>
+
+        <datalist id="cidade-list"> <!--pode selecionar uma opção ou escrever uma opção-->
+            <option value="Natal">
+            <option value="Parnamirim">
+            <option value="Macaíba">
+            <option value="Tibau">
+        </datalist>
+        <label for="obs">Observações:</label>
+        <!-- campo que permite texto com parágrafos -->
+        <textarea name="obs" id="obs" cols="30" rows="10" maxlength="255"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum veritatis quaerat sed nobis quis, possimus corporis iusto. Id distinctio maxime necessitatibus eligendi cum tempora eveniet temporibus incidunt sint dicta.
+        Voluptatum esse itaque maiores nam veritatis tenetur. Odit, quidem nobis consequuntur consectetur, voluptatum praesentium suscipit nostrum repellendus quas soluta adipisci at enim dicta nisi expedita delectus nam, mollitia maxime odio!</textarea>
+        <input type="submit" value="ENVIAR">
+
+        <!--<button type="submit">ENVIAR</button>-->
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+label[for]{ /*apenas os labels que tem for*/
+    display: inline-block;/*pelo motivo de baixo esse display, com valor inline block, é necessário. Ele atribui largura ao label*/
+    width: 12rem; /*a marcação de label não permite a definiçõ de largura pois ela tem um comportamento display-inline*/
+    vertical-align: top;/*O atributo de vertical alighn deixará o rótulo alinhado horizontalmente ao topo do text área*/
+    padding: 0.2rem;
+}
