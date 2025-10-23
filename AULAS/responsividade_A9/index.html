@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- melhora a visualização da página no dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>HALLOWEN</title>
+</head>
+<body>
+    <header>
+        <h1>HALLOWEN CNAT 2025</h1>
+    </header>
+    <div>
+        <!-- Marcação especifica para responsividade de imagens. 
+         Source fica com as imagens maiores. a menor das menores 
+         ficará com a marcação img -->
+        <!-- a marcação de source faz parte da sintaxe da tag de picture -->
+        <!-- a marcacao picture equivale a responsividade de imagens -->
+        <!-- a marcacao de source tem dois atributos, -->
+        <!-- a maior imagem fica no topo da pilha -->
+        <picture>
+            <source srcset="imagens/Rectangle1.jpg" media="(min-width:1800px)">
+            <source srcset="imagens/Rectangle3.jpg" media="(min-width:800px)">>
+            <img src="imagens/Rectangle2.jpg" alt="">
+        </picture>
+        <!-- a tag de picture pode figar dentro de qualquer outra tag que receba uma imagem -->
+    </div>
+    <main>
+        <section>
+            <h2>Organização</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, non labore accusantium consequatur sapiente dolores magnam ipsum, delectus officiis odio nam odit aliquam amet eligendi facere cumque impedit tempora rem?</p>
+        </section>
+        <section>
+            <h2>Evento</h2>
+            <p>Obcaecati in temporibus voluptatibus, nemo cumque laudantium. Alias architecto error at libero, quaerat dolore dicta quas aut quam incidunt eaque hic inventore soluta, reprehenderit, dignissimos possimus? Minima, sit. Doloribus, consequuntur.</p>
+        </section>
+        <section>
+            <h2>Cosplays</h2>
+            <p>Impedit temporibus fuga veritatis, et earum hic illo perspiciatis pariatur, natus modi voluptatum laboriosam eos expedita culpa? Obcaecati consequatur nihil rem repellendus? Ipsam beatae delectus dicta deserunt ex tenetur cum?</p>
+        </section>
+        <section>
+            <h2>Contato</h2>
+            <p>Obcaecati sequi modi amet nemo cum, nihil blanditiis quas nam ut doloribus dolore aperiam dicta? Quis et qui repudiandae laboriosam sit amet. Quibusdam sint repudiandae maiores nihil tempore ducimus a.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por IFRN/CNAT/IFRN</p>
+    </footer>
+</body>
+</html>

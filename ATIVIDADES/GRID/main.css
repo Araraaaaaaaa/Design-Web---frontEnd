@@ -19,62 +19,140 @@ footer{
     text-align: center;
 }
 main{
+    margin-top: 1rem;
     display: grid;
     grid-template-areas: 
     "a b e e h"
     "a c f g i"
     "a d f j j";
-    grid-template-columns: 4fr 1fr 2fr 1fr 1fr;
-    grid-template-rows: 20px, 20px, 20px;
+    grid-template-rows: 10px, 10px, 10px;
+    grid-template-columns: 3fr 2fr 1fr 1fr 1fr;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
-main>section>figure>img{
-    padding: 0;
-    width: 300px;
-    height: auto;
-}
-section{
-    padding: 2rem;
-    max-width: 10rem;
-    max-height: auto;
-}
-main > section.A1{ /*NAV*/
+/*NAV sidebar*/
+main > nav.A1{ 
     grid-area: a;
     background-color: rgb(185, 185, 189);
+    text-decoration: none;
 }
-main > section.A2{ /*Ler mais*/
+main > nav.A1 > ol{
+    list-style: none;
+}
+main > nav.A1 > ol > li{
+    margin: 3rem;
+}
+main > nav.A1 > ol> li > a{
+    text-decoration: none;
+    color:black;
+    padding: 20px;
+}
+/*Ler mais*/
+main > section.A2{ 
     grid-area: b;
     background-color: rgb(185, 185, 189);
+    padding: 2rem;
 }
-main > section.A3{/*Terá no evento*/
+main > section.A2 > p{
+    margin: 10px;
+}
+main > section.A2 > a{
+    padding: 0.3rem;
+    color:rgb(83, 96, 167);
+    border: 1px solid  rgb(83, 96, 167);
+    text-decoration: none;
+}
+/*Terá no evento*/
+main > section.A3{
     grid-area: c;
     background-color: rgb(185, 185, 189);
+    padding: 1.5rem;
 }
-main > section.A4{/*figure*/
+main > section.A3 > ul{
+    margin: 1rem;
+}
+main > section.A3 > ul > li{
+    margin: 0.5rem;
+}
+/*figure*/
+main > section.A4{
     grid-area: d;
+    display: relative;
     background-color: rgb(185, 185, 189);
 }
-main > section.A5{/*table*/
+main > section.A4 > figure > img{
+    height: 200px;
+    width: auto;
+}
+/*table*/
+main > section.A5{
     grid-area: e;
     background-color: rgb(185, 185, 189);
+    padding: 1.5rem;
 }
-main > section.A6{/*form*/
+main > section.A5 > table{
+    margin-top: 1rem;
+}
+main > section.A5 > table, th, td{
+    border: 1px solid white;
+    padding: 2px;
+}
+/*form*/
+main > section.A6{
     grid-area: f;
     background-color: rgb(185, 185, 189);
+    padding: 1rem;
 }
-main > section.A7{ /*figure*/
+main > section.A6 > h2{
+    margin-top: 3rem;
+}
+main > section.A6 > form{
+    margin-top: 0.5rem;
+}
+main > section.A6 > form > input{
+    padding: 0.5rem;
+    margin: 0.3rem;
+}
+main > section.A6 > form > label > input{
+    margin: 1rem;
+    padding: 1rem;
+}
+/*figure*/
+main > section.A7{ 
     grid-area: g;
     background-color: rgb(185, 185, 189);
 }
-main > section.A8{/*figure*/
+main > section.A7 > figure > img{
+    height: auto;
+    width: 250px;
+}
+/*figure*/
+main > section.A8{
     grid-area: h;
     background-color: rgb(185, 185, 189);
+}
+main > section.A8 > figure > img{
+    height: auto;
+    width: 250px;
 }
 main > section.A9{/*figure*/
     grid-area: i;
     background-color: rgb(185, 185, 189);
 }
-main > section.A10{/*Organização*/
+main > section.A9 > figure > img{
+    height: auto;
+    width: 250px;
+}
+/*Organização*/
+main > section.A10{
     grid-area: j;
     background-color: rgb(185, 185, 189);
+    padding: 2rem;
+    padding-left: 3rem;
+}
+main > section.A10 > p{
+    margin: 0.5rem;
+}
+main > section.A10 > ul{
+    margin: 1rem;
 }

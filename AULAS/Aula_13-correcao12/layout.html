@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORRECAO E REFAZER</title>
+    <style>
+        *{ /*fazer esse margin e padding zero pois por padrão os navegadores colocam um espaçamento*/
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;/*ele não altera as dimensões do elemento ao se colocar o padding*/
+        }
+        :root{
+            --azulescuro: #08254F;
+            --corcreme: #D8D4CB;
+        }
+        section{
+            padding: 2rem;
+        }
+        section:first-child{/**/
+            background-color: var(--corcreme);
+        }
+        section:nth-child(2){ /*nth= enésimo*/
+            display: flex;
+            gap: 2rem;      
+            padding: 0; 
+            flex-wrap: wrap; /*quebra de linha */
+        }
+        section:nth-child(2) h2{
+            flex-basis: 100%; /*tipo um width. ela ajuda a posicionar os blocos.*/
+            background-color: #08254F;
+            /*flex basis termina sendo mais prático, é responsivo.*/
+        }
+        section:nth-child(2) div{
+            color:white;
+            background-color: var(--azulescuro);
+            padding: 2rem;
+            text-align: center;
+            position: relative; /*se fosse absoluto ou fixo, ele teria q ter as codernadas geográficas. Fica sem aquele espaço comum da caixa.*/
+            top: -1rem;/*só funciona com o position relative*/
+            /*pode existir um objeto(se estiver absoluto) que cordene a partir do seu pai (se tiver relativo)*/
+            flex-basis: 31.42222222%; /*faz com que as divs ocupem alinhadamente a área de 70rem;*/
+        }
+        section:nth-child(2) div h2{
+            margin-bottom: 2rem;
+        }
+        /*body{ outra forma de alinhar a 3terceira section.
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column;
+        }*/
+        section:nth-child(3), section:nth-child(2){
+            max-width: 70rem; /*faz com que não tenha barra de rolagem horizontal. Responsividade*/
+            margin: 0 auto; /*o auto equivale aos lados. só funciona se vc definir largura para um bloco.*/
+            /*margin e largura trabalham juntas para alinhar*/
+        }
+        section:nth-child(3){
+            border: 1px solid black;
+        }
+        section:nth-child(3) > p{
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Só porque toda página tem que ter</h1> <!--Tem que ter porem só pode ter um-->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis esse exercitationem tempora magnam accusamus mollitia obcaecati at, recusandae nemo, quidem aperiam, quos error dicta odit eum reiciendis? Expedita, quidem unde?</p>
+    </section>
+    <section>
+        <h2>Qualquer Coisa</h2>
+        <div>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </section>
+    <section>
+        <h2>loREM</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia assumenda mollitia nesciunt eligendi deleniti laboriosam natus praesentium tempora repudiandae, voluptate consequuntur delectus aliquam sapiente necessitatibus eius rem corporis eos! Labore!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia assumenda mollitia nesciunt eligendi deleniti laboriosam natus praesentium tempora repudiandae, voluptate consequuntur delectus aliquam sapiente necessitatibus eius rem corporis eos! Labore!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia assumenda mollitia nesciunt eligendi deleniti laboriosam natus praesentium tempora repudiandae, voluptate consequuntur delectus aliquam sapiente necessitatibus eius rem corporis eos! Labore!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia assumenda mollitia nesciunt eligendi deleniti laboriosam natus praesentium tempora repudiandae, voluptate consequuntur delectus aliquam sapiente necessitatibus eius rem corporis eos! Labore!</p>
+    </section>
+</body>
+</html>
