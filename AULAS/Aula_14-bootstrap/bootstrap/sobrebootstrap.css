@@ -1,0 +1,8 @@
+.card{
+    border-color: rgb(201, 12, 12); /*sobrescreve por cima do bootstrap*/
+}
+.container-dos-gatinhos{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
