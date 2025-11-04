@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRPT - Introdução</title>
+</head>
+<body>
+    <script>
+        //document.getElementById("mensagem").innerHTML = "Olá mundo com getElementID"
+        /*quando posto acima de quem ele vai modificar dá erro. não irá funcionar pq o dom ainda n criu o elemento com o ID que ele ta chamando*/
+    </script>
+    <p id="mensagem"></p>
+    <script>
+        /* 
+        - tripé do desenvolvimento web:
+            _html: conteúdo
+            _css: estilo
+            _javascript: interatividade   
+        - javascript:
+             é uma linguagem de programação, diferente do html(marcação) e css(formatação)  ;     
+            não é java [é uma linguagem de programação, porém lado servidor e de alto nível];
+            é sensível à capitulação; é posível usar no lado cliente, servidor, mobile e desktop; 
+            não precisa declarar o tipo da variável e ela pode ser mudada futuramente;
+        
+        DOM: modelo de documento do objeto
+        */
+        /*Variáveis*/
+            var a = 0; //variável global
+            let b = 1;//declaração de variável local. ocupa menos espaço na memória do usuário
+            /*var é guardável, let é guarda a variável apenas na sessão, const*/
+            let nome = "3" ; //string
+            let inteiro = 3; //integer
+            let float = 5.8; //floating
+            let boo = true; //boolean
+        /*Operadores*/
+            console.log(inteiro+float+nome);
+            console.log(21270+4709);
+            console.log(21270*4709);
+            console.log(21270%4709);
+            console.log(21270/4709);
+            console.log(21270-4709);
+            console.log(212 + inteiro);
+            console.log(212 + inteiro++); //adiciona mais 1 em inteiro, mas isso só se mostra no print seguinte
+            console.log(212 + inteiro);
+        /*Operadores relacionais*/
+            console.log(boo);
+            console.log("4==6?");
+            console.log(4==6);
+            console.log("4!=5?");
+            console.log(4!=5);
+            //console.log("5"=5); dá erro
+            console.log("'5'==5?"); // ele tranforma '5' em 5 e iguala ao 5 int
+            console.log("5"==5);
+            console.log("'5'===5?"); // verificação do tipo. além do valor
+            console.log("5"===5);
+
+            console.log(5>6);
+            console.log(5<=6);
+            console.log(5>6 && 6<5);
+            console.log(5<6 || 5==5);
+        /*Estrutura condicional*/
+            let idade = window.prompt("Qual a sua idade?");
+            if(idade >= 18){
+                console.log("Maior de idade");
+            }else{
+                console.log("Menor de idade");
+            }
+        /*Prints*/
+            //window.alert('Olá mundo!')
+            // window.confirm("está certo isso?")
+            // var nome = window.prompt("Qual seu nome?")
+            document.write("<p>Olá Mundo com document.write</p>");
+            document.getElementById("mensagem").innerHTML = "Olá mundo com getElementID"
+            // console.log("Olá "+nome);
+    </script>
+</body>
+</html>
