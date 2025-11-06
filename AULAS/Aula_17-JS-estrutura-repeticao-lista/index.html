@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <label>N1:
+        <input type="number" id="n1">
+    </label>
+    <label>N2:
+        <input type="number" id="n2">
+    </label>
+    <button id="somar">SOMAR</button>
+    <p id="resultado"></p>
+    <!-- GO RN - centro de convençoes -->
+    <script>
+        // const tem valor fixo
+        /*const btnsomar = document.querySelector("#somar")
+        btnsomar.addEventListener("click", function (e) {
+            console.log("EVENTO CLICAR");
+            let n1 = parseInt(document.getElementById("n1").value);
+            let n2 = parseInt(document.getElementById("n2").value);
+            console.log(n1 + n2)
+            document.getElementById("resultado").innerHTML = n1 + n2;//innerHTML injeta um valor
+        })/*
+
+        //estrutura condicional
+        //parseInt transforma astr em int
+        /*let opcao = parseInt(window.prompt("Digite um número: "));
+        switch(opcao){ //match e case 
+            case 1: console.log("VALOR: 1"); break;
+            case 2: console.log("VALOR: 2"); break;
+            case 3: console.log("VALOR: 3"); break;
+            default: console.log("NENHUMA OPÇÃO");
+        }*/
+       let lista = [4, 5, 6, 7, 8, 7]
+       console.log(lista[2])//imprime 6 pq o array/lista começa em 0
+       lista.push(5);//adiciona valor
+       console.log(lista.toString());
+       console.log(lista.length); //tamanho - len()
+       delete lista[1];//Deleta valor no indice 1 sem retirar o indice vazio
+       console.log(lista.toString()); //imprime a lista 
+       lista[0] = 54; //declara novo valor ao indice 0
+       console.log(lista.toString());
+
+       let alunos = ['Aline', 'Amanda', 'José', 'Airton'];
+       let emocoes = ["😃","😋","😎","🤗","🤡"];
+       console.log(Math.random()) //número randomico entre 0 e 1
+       console.log(Math.randow*5);
+       console.log(emocoes[parseInt(Math.random()*5)]);
+       let x = Math.floor(Math.random()*5);
+       console.log(x);
+       document.write(`<p> ${emocoes[x]} </p>`);
+       document.write("<p>" +emocoes[x] + "</p>");
+        // estrutura de repetição
+       for(let n=0; n<=5; n++){//valor inicial - condição - incremento
+            console.log(n);
+       }
+       for(let item in emocoes){
+        console.log(emocoes[item] + " - ");
+       }
+       alunos.forEach(function(index){
+            console.log("foreach - " + index);
+       }
+    
+    )
+    </script>
+</body>
+</html>
