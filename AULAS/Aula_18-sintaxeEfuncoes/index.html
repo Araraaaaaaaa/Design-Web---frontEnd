@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT - Funções</title>
+</head>
+<body>
+    <p id="pra">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste tempore eligendi vitae amet similique neque optio veritatis quod corporis recusandae repellendus fuga minima quibusdam perferendis ea quo, quas autem ratione.</p>
+    <input type="color" id="cor">
+    <!-- <button id="mudarcor" onclick="mudarcor()">MUDAR COR</button> #não é tao elegante pois mistura html e javascript-->
+     <button id="btn">MUDAR COR</button>
+     <button id="borda2">MUDAR BORDA</button>
+
+    <script>
+        // function borda(nome, borda){
+        //     document.body.style.borderWidth = borda +'rem';
+        //     document.body.style.borderStyle = 'solid';
+        //     document.body.style.borderColor = nome;
+        // }
+        // borda('white', 2)
+
+        let btn = document.getElementById("btn"); //essa é a forma mais indicada.
+        btn.addEventListener("click", function (e){
+            let cor1 = document.getElementById("cor").value;//value -> pega o valor do input]
+            document.body.style.backgroundColor = cor1;
+            //document.getElementById("texto").style.color = cor;
+        });
+        let borda2 = document.getElementById("borda2"); //essa é a forma mais indicada.
+        borda2.addEventListener("click", function (e){
+            let cor2 = document.getElementById("cor").value;//value -> pega o valor do input]
+            //document.body.style.backgroundColor = cor;
+            document.getElementById("pra").style.border = `2rem solid ${cor2}`;
+        });
+        /*function mudarcor(){
+            let cor = document.getElementById("cor").value;
+            document.body.style.backgroundColor = cor;
+        }*/
+
+        function somar(){ //sem parâmetros
+            return 3+8
+        }
+        console.log(somar());
+        function somar2(num1,num2){ //2 parâmetros
+            return num1+num2;
+        }
+        console.log(somar2(5,8));
+        function somar3(num1, num2, num3){ //3 parâmetros
+            return num1+num2+num3;
+        }
+        console.log(5,8,9);
+        function somar4(num1, num2, num3, num4){
+            if(!isNaN(num1) && !isNaN(num2)){
+                //exclamação converte verdadeito em fácil
+                //isNan -> verifica se não é um número. Se não for, retorna True, se for, False
+                return num1 + num2;
+            }else {
+                return "Colocar parâmetro numérico.";
+            }
+        }
+        console.log(somar4(5,'teste'));
+        function somar5(num1=1,num2=0){
+            //quando não entra todos os parâmetros, ele substitui o(os) que não (veio)vinheram pelo(s) que esta(ão) na inicialização 
+            return num1+num2;
+        }
+        console.log(somar5(7));
+    </script>
+</body>
+</html>
