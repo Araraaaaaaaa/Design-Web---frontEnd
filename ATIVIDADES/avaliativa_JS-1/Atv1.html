@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE UM - TEXTOS</title>
+</head>
+<body>
+    <head>
+        <h1>ATIVIDADE AVALIATIVA - TEXTOS</h1>
+    </head>
+    <main>
+        <label>Texto:</label>
+        <input type="text" id="desejado">
+        <button id="btn">Enviar texto</button>
+
+        <p id="r1"></p>
+        <p id="r2"></p>
+        <p id="r3"></p>
+        <p id="r4"></p>
+        <p id="r5"></p>
+
+    </main>
+    <footer>
+        <hr>
+        <p>Desenvolvido por NICOLE DE AQUINO XAVIER</p>
+    </footer>
+    <script>
+        let butao = document.getElementById("btn");
+        butao.addEventListener("click", function(){
+            let txt = document.getElementById("desejado").value;
+            //valor inicial - condição - incremento
+            for(let n=1; n<=5; n++){
+                let casa = "r" + n;
+                document.getElementById(casa).innerHTML = txt;
+                document.getElementById(casa).style.fontSize = `${n}rem`; 
+            }  
+        }) 
+        //tava dando erro no for pois tinha comentários dentro dele.
+
+        // ----------------------------------Formatação geral
+        document.body.style.textAlign = `center`;
+        document.body.style.backgroundColor = `#FFFFF0 `;
+    </script>
+</body>
+</html>

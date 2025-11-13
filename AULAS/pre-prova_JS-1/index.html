@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pre-prova</title>
+</head>
+<body>
+    <p id="apresentacao"></p>
+    <input type="text" id="nome">
+    <button id="butao">Enviar nome</button>
+
+    <input type="color" id="colorir">
+    <button id="Bcor">Mudar cor</button>
+    <script>
+        let butao = document.getElementById("butao");
+        let Bcor = document.getElementById("Bcor");
+        butao.addEventListener("click", function(){
+            let nome_input = document.getElementById("nome").value;
+            apresentar(nome_input);
+        })
+        Bcor.addEventListener("click", function(){
+            backcolor();
+        })
+        function apresentar(Nom){
+            document.getElementById("apresentacao").innerHTML = `Bem vindo(a) ${Nom}`;
+        }
+        function backcolor(){
+            let input_colorir = document.getElementById("colorir").value;
+            document.body.style.backgroundColor = input_colorir;
+            
+        }
+    </script>
+</body>
+</html>
