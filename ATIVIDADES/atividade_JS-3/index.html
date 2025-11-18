@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE DE JAVASCRIPT - 18 NOV - N2</title>
+</head>
+<body>
+    <head>
+        <h1>ATIVIDADE JS - NOMES</h1>
+    </head>
+
+    <main>
+        <label>Nome:</label>
+        <input type="text" id="NovoNome">
+        <button id="submeter">Adicionar</button>
+        <p id="listando"></p>
+    </main>
+
+    <script>
+        let butao = document.getElementById("submeter");
+        let nomes = ["João", "Maria", "José"];
+        document.getElementById("listando").innerHTML = nomes;
+
+        butao.addEventListener("click", function(){
+            let nome_input = document.getElementById("NovoNome").value;
+            nomes.push(nome_input);
+            mostrar();
+             })
+
+        function mostrar(){
+            document.getElementById("listando").innerHTML = nomes;
+        }
+        
+    </script>
+</body>
+</html>

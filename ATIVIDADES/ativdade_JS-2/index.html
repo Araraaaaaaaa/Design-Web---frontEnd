@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="actv.css">
+    <title>ATIVIDADE DE JAVASCRIPT - 18 NOV</title>
+</head>
+<body>
+    
+    <script>
+        for (let n = 0; n <= 99; n++){
+            let R = Math.floor(Math.random()*255)
+            let G = Math.floor(Math.random()*255)
+            let B = Math.floor(Math.random()*255)
+            document.write(`<button onclick=planodefundobody(${R},${G},${B}) style="background-color: rgb(${R},${G},${B})"></button>`);        
+        }
+        function planodefundobody(Rr,Gg,Bb){
+            document.body.style.backgroundColor = `rgb(${Rr},${Gg},${Bb})`
+        }
+    </script>
+    
+</body>
+</html>

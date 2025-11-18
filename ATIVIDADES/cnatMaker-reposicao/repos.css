@@ -13,27 +13,51 @@ body{
     gap: 1.5rem;
     align-items: center;
     justify-content: center;
+    margin-right: 8rem;
 }
 section{
     background-color: rgb(255, 255, 208);
-    margin-top: 4rem;
+    margin-top: 1.5rem;
     border-radius: 20px;
     box-shadow: 0px 0px 10px #853290;
 }
+section > h2{
+    margin-top: 2rem;
+    font-size: 15px;
+}
+
 div{
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 2rem 2rem;
     color: #853290;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-size: xx-large;
-    box-shadow: 0px 0px 0.5px #d7c5da;
 }
 button{
     background-color: #7F329E ;
     color: rgb(255, 255, 208);
     border: none;
     padding: 0.3rem 3rem 0.3rem 3rem;
+    margin-bottom: 10rem;
+
+}
+p{
+    font-size:14px;
+    padding: 1rem;
 }
 #section-maior{
-
-    min-height: 50rem;
+    max-width: 20rem;
+    max-height: 40rem;
+}
+#section-maior > button{
+    margin-bottom: 13rem;
+}
+.section-menor-1{
+    max-width: 15rem;
+    max-height: 24rem;
+}
+.section-menor-2{
+    max-width: 15rem;
+    max-height: 24rem;
 }
