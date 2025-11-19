@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="oneForAll.css">
+    <title>ATIVIDADE 2 - SENHAS</title>
+</head>
+<body>
+    <header>
+        <h1>ATIVIDADE AVALIATIVA - SENHAS IGUAIS</h1>
+    </header>
+
+    <main>
+        <label>Senha:</label>
+        <input type="text" id="senhaPrimeira"> <br>
+        <label>Confirmação de senha:</label>
+        <input type="text" id="senhaSegunda"> <br>
+
+        <button id="btn">Verificar Senhas</button>
+        <p id="resposta"></p>
+    </main>
+
+    <footer>
+        <hr>
+        <p>Desenvolvido por NICOLE DE AQUINO XAVIER</p>
+    </footer>
+    <script>
+        let butao = document.getElementById("btn");
+        butao.addEventListener("click", function(){
+            let s1 = document.getElementById("senhaPrimeira").value;
+            let s2 = document.getElementById("senhaSegunda").value;
+            let jo = validacao(s1, s2);
+            if (jo == 1){
+                document.getElementById("resposta").innerHTML = `Senhas iguais`;
+                document.getElementById("resposta").style.color = `green`;
+            }else{
+                document.getElementById("resposta").innerHTML = `Senhas diferentes`;
+                document.getElementById("resposta").style.color = `red`;
+            }
+        })
+        function validacao(SS1, SS2){
+            if (SS1 == SS2){return 1}
+            else{return 0}
+        }
+        // ----------------------------------Formatação geral
+        document.body.style.textAlign = `center`;
+        document.body.style.backgroundColor = `#FFFFF0 `;
+    </script>
+</body>
+</html>

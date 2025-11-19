@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="oneForAll.css">
     <title>ATIVIDADE UM - TEXTOS</title>
 </head>
 <body>
     <header>
         <h1>ATIVIDADE AVALIATIVA - TEXTOS</h1>
     </header>
+
     <main>
         <label>Texto:</label>
         <input type="text" id="desejado">
         <button id="btn">Enviar texto</button>
-
+        <!-- 
         <p id="r1"></p>
         <p id="r2"></p>
         <p id="r3"></p>
         <p id="r4"></p>
-        <p id="r5"></p>
-
+        <p id="r5"></p> -->
     </main>
+
     <footer>
         <hr>
         <p>Desenvolvido por NICOLE DE AQUINO XAVIER</p>
@@ -32,6 +34,7 @@
             //valor inicial - condição - incremento
             for(let n=1; n<=5; n++){
                 let casa = "r" + n;
+                document.write(`<p id="${casa}"></p>`)
                 document.getElementById(casa).innerHTML = txt;
                 document.getElementById(casa).style.fontSize = `${n}rem`; 
             }  
