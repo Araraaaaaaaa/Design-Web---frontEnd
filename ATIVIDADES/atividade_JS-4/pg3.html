@@ -4,18 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="oneForAll.css">
-    <title>ATIVIDADE 2 - SENHAS</title>
+    <title>ATIVIDADE 3 - NÚMEROS</title>
 </head>
 <body>
     <header>
-        <h1>ATIVIDADE AVALIATIVA - SENHAS IGUAIS</h1>
+        <h1>ADICIONAR E SUBTRAIR</h1>
+        <nav>
+            <ol>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="pg1.html">Página 1</a></li>
+                <li><a href="pg2.html">Página 2</a></li>
+                <li><a href="pg3.html">Página 3</a></li>
+            </ol>
+        </nav>
     </header>
     <main>
-
+        <button id="menos">-</button>
+        <p id="numero"></p>
+        <button id="mais">+</button>
     </main>
     <footer>
         <hr>
         <p>Desenvolvido por NICOLE DE AQUINO XAVIER</p>
     </footer>
+    <script>
+        let ME = document.getElementById("menos");
+        let MA = document.getElementById("mais");
+        let number = 0;
+        mostrar();
+        ME.addEventListener("click", function(){
+            number = number - 1;
+            mostrar();
+        })
+        ME.addEventListener("auxclick", function(){
+            number = number - 2;
+            mostrar();
+        })
+        MA.addEventListener("click", function(){
+            number = number + 1;
+            mostrar();
+        })
+        MA.addEventListener("auxclick", function(){
+            number = number + 2;
+            mostrar();
+        })
+        function mostrar(){
+            document.getElementById("numero").innerHTML = number
+        }
+    </script>
 </body>
 </html>

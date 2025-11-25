@@ -1,6 +1,53 @@
-header{
-    background-color: rgb(186, 180, 186);
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-footer{
-    background-color: rgb(186, 180, 186);
+body{
+    background-color: #FFFFF0;
+}
+header > h1, header > nav{
+    margin-top: 1rem;
+}
+header > nav > ol > li{
+    margin: 0 20px 0 20px;
+}
+header > nav > ol > li > a{
+    text-decoration: none;
+    padding: 1.5rem;
+    color:rgb(70, 70, 70);
+}
+main{
+    margin: 2rem 0 2rem 0;
+}
+main > input{
+    margin-bottom: 15px;
+}
+header > nav > ol > li, figure > img{
+    border: solid 1px rgb(70, 70, 70);
+}
+figure > img{
+    max-width: 18rem;
+    max-height: auto;
+}
+footer > p{
+    padding-top: 1.5rem;
+    color:rgb(70, 70, 70);
+}
+#menos, #mais{
+    padding: 20px;
+    margin: 0 2rem 0 2rem;
+}
+#numero, #menos, #mais, header > nav > ol > li{
+    display:inline-block;
+}
+#btn, main > input{
+    padding: 5px;
+}
+#resposta{
+    font-size: large;
+    margin: 1rem;
+}
+#btn, main > input, figure > img, header > nav > ol > li, #menos, #mais{
+    border-radius: 5px;
 }

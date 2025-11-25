@@ -8,10 +8,14 @@
 </head>
 <body>
     <header>
-        <h1>ATIVIDADE AVALIATIVA - PROVAS</h1>
+        <h1 id="titulo">CORES RANDOMICAS</h1>
         <nav>
-            <a href="pg1.html">Página 1</a> <a href="pg2.html">Página 2</a>
-            <a href="pg3.html">Página 3</a> <a href="pg4.html">Página 4</a>
+            <ol>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="pg1.html">Página 1</a></li>
+                <li><a href="pg2.html">Página 2</a></li>
+                <li><a href="pg3.html">Página 3</a></li>
+            </ol>
         </nav>
     </header>
     <main>
@@ -21,6 +25,15 @@
         <hr>
         <p>Desenvolvido por NICOLE DE AQUINO XAVIER</p>
     </footer>
-    
+    <script>
+        let R = Math.floor(Math.random()*255);
+        let G = Math.floor(Math.random()*255);
+        let B = Math.floor(Math.random()*255);
+        let imagem_mudar = Math.floor(Math.random()*9)
+
+        console.log(imagem_mudar)
+        document.getElementById("titulo").style.color = `rgb(${R},${G},${B})`
+        document.getElementById("capa").innerHTML = `<img src="imagens/img${imagem_mudar}.jpeg" alt="animais engraçados e fofos para alegrar seu dia">`
+    </script>
 </body>
 </html>

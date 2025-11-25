@@ -4,23 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="oneForAll.css">
-    <title>ATIVIDADE UM - TEXTOS</title>
+    <title>ATIVIDADE 1 - TEXTOS</title>
 </head>
 <body>
     <header>
-        <h1>ATIVIDADE AVALIATIVA - TEXTOS</h1>
+        <h1>TAMANHOS DE TEXTOS</h1>
+        <nav>
+            <ol>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="pg1.html">Página 1</a></li>
+                <li><a href="pg2.html">Página 2</a></li>
+                <li><a href="pg3.html">Página 3</a></li>
+            </ol>
+        </nav>
     </header>
 
     <main>
         <label>Texto:</label>
         <input type="text" id="desejado">
         <button id="btn">Enviar texto</button>
-        <!-- 
-        <p id="r1"></p>
-        <p id="r2"></p>
-        <p id="r3"></p>
-        <p id="r4"></p>
-        <p id="r5"></p> -->
     </main>
 
     <footer>
@@ -34,16 +36,12 @@
             //valor inicial - condição - incremento
             for(let n=1; n<=5; n++){
                 let casa = "r" + n;
-                document.write(`<p id="${casa}"></p>`)
-                document.getElementById(casa).innerHTML = txt;
+                document.write(`<p id="${casa}">${txt}</p>`);
                 document.getElementById(casa).style.fontSize = `${n}rem`; 
             }  
         }) 
         //tava dando erro no for pois tinha comentários dentro dele.
-
-        // ----------------------------------Formatação geral
-        document.body.style.textAlign = `center`;
-        document.body.style.backgroundColor = `#FFFFF0 `;
+        
     </script>
 </body>
 </html>
