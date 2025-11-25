@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Nativas</title>
+</head>
+<body>
+    <p id="esse"></p>
+    <p id="segundos"></p>
+    <script>
+        //---------------------------------------------------------Funções nativas de string
+        console.log(" -- - -- - -");
+        let nome = "INFOWEB";
+        console.log(nome);
+        console.log("Comprimento da string: "+ nome.length);
+        // legth é o comprimento da string
+        console.log("Posição do caractere da string: " + nome.charAt(0));
+        // imprime qual caractere ta no indice 0
+        console.log("Substituir string: "+ nome.replace("INFO", "INFORMÁTICA PARA "));
+        // esse método recebe duas strings e elas devem estar entre aspas
+        console.log("Pegar uma substring da string: " + nome.substr(4,3));
+        // do indice tal ele faz uma substring de largura tal
+        console.log("Divide a string: " + nome.split("O")[0]);
+        //ele pode receber string ou número e retorna uma array/lista
+        console.log("Coloca em minúscula: "+ nome.toLowerCase());
+        console.log("Coloca em maiúscula: "+ nome.toUpperCase());
+        nome = "                    INFOWEB                          ";
+        console.log(nome);
+        console.log("Remove os espaços laterais da string: "+ nome.trim());
+        console.log("Juntar string: "+ nome.trim().concat("iFRN "));
+        console.log("Juntar string: "+ "Info".concat(" web"));
+
+        //-----------------------------------------------------------Funções nativas de matematica
+        console.log(" -- - -- - -");
+        console.log("Valor de pi: " + Math.PI);
+        let num = 54.4;
+        console.log("Arredondamento sempre para cima: "+ Math.ceil(num));
+        //esse daqui é comparável com o f2..
+        console.log("Arredondamento sempre para baixo: "+ Math.floor(num));
+        console.log("Arredondamento padrão: "+ Math.round(num));
+        console.log("Número aleatório: "+ Math.random()* 3); //randomiza entre 0 e 3
+        console.log("Número aleatório arredondado: "+ Math.round(Math.random()* 3)); //randomiza entre 0 e 3 e arredonda
+        console.log("Retorna o menor número: "+ Math.min(54, 55, 87, 56, 57, 8, 5, 15, 78, 87));
+        console.log("Retorna o maior número: "+ Math.max(54, 55, 87, 56, 57, 8, 5, 15, 78, 87));
+        console.log("Potência: "+ Math.pow(2,4));
+        //dois elevado a quatro
+        console.log("Raiz quadrada: "+ Math.sqrt(9))
+        //raiz quadrada de 9
+
+        //------------------------------------------------------------Funções nativas de data
+        console.log(" -- - -- - -");
+        const data = new Date();
+        let meses = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
+        console.log("Dia de hoje: "+ data.getDate());
+        console.log("Mês: "+ data.getMonth());
+        console.log("Mês Corrigido: "+ (data.getMonth() + 1));
+        console.log("Ano: "+ data.getFullYear());
+        console.log(data.getDate() +"/"+ (meses[data.getMonth()]) +"/"+ data.getFullYear());
+
+        document.getElementById("esse").innerHTML = `${data.getDate()} / ${meses[data.getMonth()]} / ${data.getFullYear()}`
+
+        function hora(){
+            let d= new Date();
+            document.getElementById("segundos").innerHTML = d.getSeconds();
+        }
+        console.log(setInterval(hora, 1000));
+        //exemplo, uma mensagem que aparece e desaparece por tal tal segundos.
+
+    </script>
+</body>
+</html>
