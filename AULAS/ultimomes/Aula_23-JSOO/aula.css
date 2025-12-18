@@ -1,0 +1,9 @@
+td{
+    border: solid 2px black;
+    border-collapse: collapse;
+}
+.favorito{
+    color:gold;
+    font-style: oblique;
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aula.css">
+    <title>Aula introdutória de VUE.JS</title>
+</head>
+<body>
+
+    <div id="app">
+        <!-- tudo da view deve ficar dentro dessa div -->
+        <h1>{{ titulo }}</h1>
+        <p>{{ msg }}</p>
+
+        <table>
+            <tr v-for = "pessoa in contatos"
+                :class="{`favorito`: pessoa.favorito}">
+                <!-- :class é um atributo dinâmico.
+                se o atributo favorito da pessoa estiver em true, puxar o css da class favorito -->
+                <td> <img width="125" :src="`imagens/`+pessoa.foto" alt=""></td>
+                <td> {{ pessoa.nome }}  </td>
+                <td> {{ pessoa.celular }} </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="agenda.js"></script>
+</body>
+</html>
