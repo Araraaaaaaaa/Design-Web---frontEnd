@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUPLA ATIVIDADE</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">TÍTULO</h1>
+        <ul>
+            <li><button id="inputEsc">Tema Escuro</button></li>
+            <li><button id="inputFri">Tema Frio</button></li>
+            <li><button id="inputQue">Tema Quente</button></li>
+        </ul>
+    </header>
+    <main> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae fuga dignissimos voluptatibus dolorem unde optio deserunt eveniet, cum dolor praesentium voluptatem odio molestiae, nobis autem aut eius. Voluptatum, nostrum quas.</span><span>Nihil quidem dolore soluta neque voluptatibus ipsum, praesentium inventore pariatur repellendus odio asperiores commodi facere, nam qui nemo aut illo ab! Suscipit distinctio enim ex excepturi omnis delectus culpa exercitationem?</span><span>Corrupti eos nostrum et deleniti vero saepe repellat laborum amet numquam molestiae similique, labore cupiditate quo hic quibusdam! Amet laboriosam velit quae itaque nulla dolore delectus, illum odit est molestias.</span><span>Quae veniam eligendi odio obcaecati, cupiditate ratione laudantium in quibusdam! Nobis repellat reprehenderit qui error iusto maxime ipsam porro, deleniti provident ad voluptatum iure repellendus tenetur similique quibusdam praesentium atque!</span><span>Obcaecati, id voluptatibus adipisci culpa quidem sequi animi excepturi quisquam pariatur sit vel, accusantium molestias quibusdam tempora et ullam voluptates quia optio? Magni provident laborum incidunt exercitationem et molestias nobis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eligendi illum enim placeat soluta delectus aspernatur, voluptate explicabo facilis quos magni hic fugiat praesentium sed, distinctio suscipit nihil ipsum! Minus?</span><span>Quidem quisquam excepturi deleniti laborum? Voluptatem sint explicabo sit nisi ducimus laboriosam aperiam, et amet eaque placeat quia assumenda. Nihil excepturi consequuntur nisi iure iusto. Inventore optio culpa impedit nemo!</span><span>Animi maxime delectus, id nemo sunt repellat suscipit minima labore commodi, expedita illo odio? Commodi saepe libero aperiam mollitia nisi, pariatur quia nulla, fugiat nesciunt harum veniam voluptates atque fuga.</span><span>Quas harum officiis, aut accusamus aliquid fuga molestias ipsa veritatis quasi assumenda quos ea nulla consequuntur expedita deleniti dolor obcaecati eveniet delectus quia iure sequi, vel, voluptatibus vitae magni. Ullam!</span><span>Ad eius dolore exercitationem dolores molestias. Cupiditate odio voluptatibus beatae veniam distinctio doloremque illo cum animi laboriosam explicabo velit accusamus ducimus facilis maiores et quisquam reprehenderit possimus, reiciendis accusantium obcaecati!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur commodi sit dolores alias sint error quasi sed asperiores, dolore fugit delectus iure dolorem quod ducimus obcaecati ab aut. Debitis, culpa.</span><span>Totam ut, laudantium eaque placeat, dolorum perferendis libero esse unde, modi animi harum dolor non earum doloremque quia perspiciatis cumque at. Deleniti molestiae atque laudantium dignissimos esse voluptas, laborum voluptatibus.</span><span>Autem, deleniti! Eaque veniam facilis accusamus, nam ab ipsum numquam accusantium dolores dicta aperiam dolore cum minima non nostrum fugiat blanditiis, similique ad saepe dolorem praesentium aut distinctio? Quisquam, corrupti?</span><span>Dolores dolorum itaque aspernatur laboriosam, expedita magnam. Tempora fugiat, mollitia dolores, a aliquid eaque eos, ipsa velit sequi accusamus maxime voluptatibus harum officia itaque voluptatem repudiandae explicabo fugit. Voluptate, asperiores.</span><span>Cupiditate veritatis nobis, libero, necessitatibus dolorem accusamus eligendi fugit officiis, earum molestias natus quaerat! Quisquam vero, magni consectetur eaque modi nostrum sunt dolorum sit numquam reprehenderit adipisci asperiores, iure sint?</p>
+    </main>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #e0e0e0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        header{
+            margin: 4rem 0 4rem 0;
+        }
+        button{
+            color: white;
+            background-color: rgb(139, 139, 139); 
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border-color: rgb(90, 90, 90);
+        }
+        h1{
+            font-size: 8rem;
+        }
+        h1, ul{
+            text-align: center;
+        }
+        p{
+            text-indent: 2rem;
+            margin: 0 3rem 20px 8rem;
+            color: black;
+        }
+        li{
+            margin: 1rem 1rem 0 1rem;
+            display:inline-block;
+            list-style-type: none;
+        }
+    </style>
+    <script>
+        let input_escuro = document.getElementById("inputEsc");
+        let input_frio = document.getElementById("inputFri");
+        let input_quente = document.getElementById("inputQue");
+
+        input_escuro.addEventListener("click", function(){
+            document.querySelector("style").innerHTML = `
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+                body{
+                    background-color: #3a3b4a;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                }
+                header{
+                    margin: 4rem 0 4rem 0;
+                }
+                button{
+                    color: white;
+                    background-color: rgb(145, 146, 99); 
+                    padding: 1rem;
+                    border-radius: 0.5rem;
+                    border-color: rgb(201,201,201);
+                }
+                h1{
+                    font-size: 8rem;
+                }
+                h1, ul{
+                    text-align: center;
+                }
+                p{
+                    text-indent: 2rem;
+                    margin: 0 3rem 20px 8rem;
+                    color:rgb(201,201,201);
+                }
+                li{
+                    margin: 1rem 1rem 0 1rem;
+                    display:inline-block;
+                    list-style-type: none;
+                }`;
+        });
+        input_frio.addEventListener("click", function(){
+            document.querySelector("style").innerHTML = `
+                /* cor de texto, tipo de fonte, plano de fundo, centralização do texto */
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+                body{
+                    background-color: #ABBCBB;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                }
+                header{
+                    margin: 4rem 0 4rem 0;
+                }
+                button{
+                    color: #D4D3D7;
+                    background-color: #717F76; 
+                    padding: 1rem;
+                    border-radius: 0.5rem;
+                    border-color: #D4D3D7;
+                }
+                h1{
+                    font-size: 8rem;
+                }
+                h1, ul{
+                    text-align: center;
+                }
+                p{
+                    text-indent: 2rem;
+                    margin: 0 3rem 20px 8rem;
+                    color: black;
+                }
+                li{
+                    margin: 1rem 1rem 0 1rem;
+                    display:inline-block;
+                    list-style-type: none;
+                }`;
+        });
+        input_quente.addEventListener("click", function(){
+            document.querySelector("style").innerHTML = `
+                /* cor de texto, tipo de fonte, plano de fundo, centralização do texto */
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+                body{
+                    background-color: #FFB6C1;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                }
+                header{
+                    margin: 4rem 0 4rem 0;
+                }
+                button{
+                    color: black;
+                    background-color: CAFF70; 
+                    padding: 1rem;
+                    border-radius: 0.5rem;
+                    border-color: #98FB98;
+                }
+                h1{
+                    font-size: 8rem;
+                }
+                h1, ul{
+                    text-align: center;
+                }
+                p{
+                    text-indent: 2rem;
+                    margin: 0 3rem 20px 8rem;
+                    color: black;
+                }
+                li{
+                    margin: 1rem 1rem 0 1rem;
+                    display:inline-block;
+                    list-style-type: none;
+                }`;
+        })
+
+        function titulo_mudar_cor(){
+            let R = Math.floor(Math.random()*255);
+            let G = Math.floor(Math.random()*255);
+            let B = Math.floor(Math.random()*255);
+            console.log(R);console.log(G);console.log(B);
+            document.getElementById("titulo").style.color = `rgb(${R},${G},${B})`
+        }
+        console.log(setInterval(titulo_mudar_cor, 30000));
+    </script>
+</body>
+</html>
